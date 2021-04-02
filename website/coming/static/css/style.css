@@ -1,0 +1,45 @@
+/* background color */
+.background-yellow{
+    background-color: #F2EBE5;
+    height: 100vh;
+}
+.yellow-bg{
+    background: url('../img/big-drop-1.png');
+    background-color: #F2EBE5; /* Used if the image is unavailable */
+    width: 100%; /* You must set a specified height */
+    height: 100%;
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: 100%; /* Resize the background image to cover the entire container */
+
+}
+.bg-left{
+    position: fixed;
+    top: 35vh;
+    left: 5vw;
+    height: 50%;
+    width: 25%;
+    background: url('../img/bg-left.png');
+    background-repeat: no-repeat;
+    background-size: 90%;
+}
+.bg-right{
+    position: fixed;
+    top: 16vh;
+    right: 5vw;
+    height: 55%;
+    width: 30%;
+    background: url('../img/bg-right.png');
+    background-repeat: no-repeat;
+    background-size: 96%;
+}
+
+.bg-right-down{
+    position: fixed;
+    top: 70vh;
+    right: -8vw;
+    height: 60%;
+    width: 15%;
+    background: url('../img/bg-right-down2.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+}

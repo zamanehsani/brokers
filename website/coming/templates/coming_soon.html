@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="container pb-5">
+    <div class="row">
+        <div class="container mt-5 pt-5">
+            <div class="text-center">
+                <img src="{% static 'img/Logo.png' %}" width="auto" height="200" alt="logo">
+            </div>
+            <div class="row text-center">
+                <h1 class="fw-bold text-uppercase" style="color: #ffc107;">Awareness Brokers Foundation</h1>
+            </div>
+            <div class="row justify-content-md-center pt-3">
+                <div class="card bg-warning mb-3 center p-3" style="max-width: 42rem;">
+                    <div class="text-center"><h1>Coming Soon...</h1></div>
+                    <div class="card-body">
+                        {% if messages %}
+                        {% for message in messages %}
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="alert alert-success" role="alert">
+                                    {{message}}
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}{% endif %}
+                        <form action="{% url 'subscribe' %}" method="POST"> {% csrf_token %}
+                            <div class="input-group">
+                                <input type="email" required name="email" class="form-control" placeholder="Enter your email to notify you" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                <input type="Submit" class="btn btn-primary bg-dark" id="button-addon2">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card-body" >
+                        <ul class="list-group list-group-horizontal justify-content-center">
+                            <li  style="background:transparent; border: none;" class="list-group-item">
+                                <a class="text-dark" href="https://www.facebook.com/AwarenessBrokers" target="_blank"><h3> <span class="iconify" data-icon="fa:facebook"></span> </h3></a>
+                            </li>
+                            <li  style="background:transparent; border: none;" class="list-group-item">
+                                <a class="text-dark" href="https://www.instagram.com/awarenessbrokers/" target="_blank" ><h3> <span class="iconify" data-icon="fa:instagram"></span> </h3></a>
+                            </li>
+                            <li  style="background:transparent; border: none;" class="list-group-item">
+                                <a class="text-dark" href="https://twitter.com/awarenessbf" target="_blank"><h3> <span class="iconify" data-icon="fa:twitter"></span> </h3></a>
+                            </li>
+                            <li  style="background:transparent; border: none;" class="list-group-item"> 
+                                <a class="text-dark" href="https://www.youtube.com/channel/UCmf6Db_UgHtg0ZcXAQqkAaw/about" target="_blank"><h3> <span class="iconify" data-icon="fa:youtube"></span> </h3></a>
+                            </li>
+                        </ul>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
