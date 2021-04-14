@@ -1,7 +1,28 @@
+
+@font-face {
+    font-family: exodusfont;
+    src: url(../fonts/ExodusDemo-Sharpen.otf);
+  }
+@font-face{
+    font-family: nazanin;
+    src: url(../fonts/B-NAZANIN.TTF);
+}
+.tagline{
+    font-family: exodusfont;
+}
+
+.nazanin{
+    font-family: nazanin;
+}
 /* background color */
 .background-yellow{
     background-color: #F2EBE5;
     height: 100vh;
+}
+
+.logo{
+    width: 20em;
+    height: 14em;
 }
 .yellow-bg{
     background: url('../img/big-drop-1.png');
@@ -28,8 +49,8 @@
     position: fixed;
     top: 16vh;
     right: 5vw;
-    height: 55%;
-    width: 30%;
+    height: 40%;
+    width: 20%;
     background: url('../img/bg-right.png');
     background-repeat: no-repeat;
     background-size: 96%;
