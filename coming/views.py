@@ -3,7 +3,7 @@ from django.conf import settings
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.contrib.auth.models import User
-from django.views.generic import ListView, DetailView
+from django.views.generic import ListView, DetailView, TemplateView
 # Create your views here.
 
 def coming(request):
@@ -24,3 +24,7 @@ def subscribe(request):
 class Main(ListView):
     template_name = 'main.html'
     model = User
+
+class Landing(TemplateView):
+    template_name = 'landing.html'
+    

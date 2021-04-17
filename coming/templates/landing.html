@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<nav class="navbar navbar-expand-lg navbar-nav-scroll navbar-light bg-warning">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="{% static 'img/logo-text.png' %}" width="200" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mx-auto mb-2 mb-lg-0">
+          <li class="nav-item mx-1">
+            <a class="nav-link btn btn-outline-light border-0 btn-sm rounded-pill py-1 active " aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a class="nav-link btn btn-outline-light border-0 btn-sm rounded-pill py-1" href="#">Who we are</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a class="nav-link btn btn-outline-light border-0 btn-sm rounded-pill py-1" href="#">What we do</a>
+          </li>
+       
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle btn btn-outline-light border-0 btn-sm rounded-pill py-1" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Initiatives
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Bloggers</a></li>
+              <li><a class="dropdown-item" href="#">Awarness Support Fund </a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Pamir Library</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-light border-0 btn-sm rounded-pill py-1" href="#">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-light border-0 btn-sm rounded-pill py-1" href="#">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-light border-0 btn-sm rounded-pill py-1" href="#">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-light border-0 btn-sm rounded-pill py-1" href="#">Get involved</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+{% endblock content %}
