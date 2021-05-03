@@ -3,10 +3,12 @@
 
 {% block content %}
 
+
+
 <nav class="navbar navbar-expand-lg navbar-nav-scroll navbar-light bg-warning">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        <img src="{% static 'img/logo-text.png' %}" width="200" alt="">
+        <img src="{% static 'img/WhiteLogoforheaders.png' %}" height="60" alt="">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -23,7 +25,6 @@
           <li class="nav-item mx-1">
             <a class="nav-link btn btn-outline-light border-0 btn-sm rounded-pill py-1" href="#">What we do</a>
           </li>
-       
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle btn btn-outline-light border-0 btn-sm rounded-pill py-1" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Initiatives
@@ -50,8 +51,77 @@
         </ul>
       </div>
     </div>
-  </nav>
-
-
+</nav>
+<div class="container" style="height: 300px;">
+<p>sfsd</p>
+</div>
+<footer class="container-fluid bg-warning">
+  <div class="container pt-4">
+    <div class="row">
+      <div class="col">
+        <!-- logo with social media links -->
+        <img class="footer-logo" src="{% static 'img/logo-with-text.png' %}" alt="">
+        <ul class="list-group list-group-horizontal">
+          <li  class="list-group-item bg-warning border-0">
+            <a href="https://www.facebook.com/AwarenessBrokers" title="Awarenss Brokers Foundation's facebook">
+              <span class="iconify" data-icon="simple-icons:facebook" data-inline="false" style="color: blue;"></span>
+            </a>
+          </li>
+          <li  class="list-group-item bg-warning border-0">
+            <a href="https://twitter.com/AwarenessBF" title="Awareness Brokers Foundation's twitter">
+              <span class="iconify" data-icon="logos:twitter" data-inline="false"></span>
+            </a>
+            </li>
+          <li  class="list-group-item bg-warning border-0">
+            <a href="https://www.youtube.com/channel/UCmf6Db_UgHtg0ZcXAQqkAaw/featured" title="Awareness Brokers Foundation's youtube Channel">
+              <span class="iconify" data-icon="logos:youtube-icon" data-inline="false"></span>
+            </a>
+          </li>
+          <li  class="list-group-item bg-warning border-0">
+            <a href="https://www.instagram.com/awarenessbrokers/" title="Wareness Brokers Foundation's Instagram">
+              <span class="iconify" data-icon="ant-design:instagram-outlined" data-inline="false" style="color: red;"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- quick links -->
+      <div class="col">
+        <ul class="list">
+          <li class="list-group-item py-1 border-0 bg-warning ">
+            <a class="text-decoration-none" href="#">About</a>
+          </li>
+          <li class="list-group-item py-1 border-0 bg-warning ">
+            <a class="text-decoration-none" href="3">Contact</a>
+          </li>
+          <li class="list-group-item py-1 border-0 bg-warning ">
+            <a class="text-decoration-none" href="#">Terms and Policy</a>
+          </li>
+          <li class="list-group-item py-1 border-0 bg-warning ">
+            <a class="text-decoration-none" href="#">Programs</a>
+          </li>
+          <li class="list-group-item py-1 border-0 bg-warning ">
+            <a class="text-decoration-none" href="#"> Blogs</a>
+          </li>
+        </ul>
+      </div>
+      <!-- a facebook or twitter last post view or email subscription form -->
+      <div class="col">
+        <div class="container">
+          <form class="form-inline">
+            <div class="form-group mb-2">
+              <!-- <label for="exampleFormControlInput1" class="sr-only">Password</label> -->
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email@example.com">
+            </div>
+            <button type="submit" class="btn btn-primary mb-2">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row my-auto border-top border-white">
+    <p class="muted">Developed and designed by 
+      <a class="text-decoration-none" href="www.zamanehsani.com" target="_blank" title="visit my website">Zaman</a></p>
+  </div>
+</footer>
 
 {% endblock content %}

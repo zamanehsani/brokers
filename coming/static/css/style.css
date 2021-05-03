@@ -21,7 +21,7 @@
 }
 
 .logo{
-    width: 20em;
+    /* width: em; */
     height: 14em;
 }
 .yellow-bg{
@@ -65,4 +65,8 @@
     background: url('../img/bg-right-down2.png');
     background-repeat: no-repeat;
     background-size: 50%;
+}
+
+.footer-logo {
+    width: 60%;
 }
