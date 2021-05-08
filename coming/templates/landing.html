@@ -53,7 +53,7 @@
     </div>
 </nav>
 <div class="container" style="height: 300px;">
-<p>sfsd</p>
+
 </div>
 <footer class="container-fluid bg-warning">
   <div class="container pt-4">
@@ -88,38 +88,49 @@
       <div class="col">
         <ul class="list">
           <li class="list-group-item py-1 border-0 bg-warning ">
-            <a class="text-decoration-none" href="#">About</a>
+            <a class="text-decoration-none  text-dark" href="#">About</a>
           </li>
           <li class="list-group-item py-1 border-0 bg-warning ">
-            <a class="text-decoration-none" href="3">Contact</a>
+            <a class="text-decoration-none text-dark" href="3">Contact</a>
           </li>
           <li class="list-group-item py-1 border-0 bg-warning ">
-            <a class="text-decoration-none" href="#">Terms and Policy</a>
+            <a class="text-decoration-none text-dark" href="#">Terms and Policy</a>
           </li>
           <li class="list-group-item py-1 border-0 bg-warning ">
-            <a class="text-decoration-none" href="#">Programs</a>
+            <a class="text-decoration-none text-dark" href="#">Programs</a>
           </li>
           <li class="list-group-item py-1 border-0 bg-warning ">
-            <a class="text-decoration-none" href="#"> Blogs</a>
+            <a class="text-decoration-none text-dark" href="#"> Blogs</a>
           </li>
         </ul>
       </div>
       <!-- a facebook or twitter last post view or email subscription form -->
       <div class="col">
-        <div class="container">
-          <form class="form-inline">
-            <div class="form-group mb-2">
-              <!-- <label for="exampleFormControlInput1" class="sr-only">Password</label> -->
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email@example.com">
+        <form>
+          <div class="form-group">
+            <div class="col">
+              <!-- <label class="sr-only" for="inlineFormInput">Name</label> -->
+              <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Your name">
             </div>
-            <button type="submit" class="btn btn-primary mb-2">Subscribe</button>
-          </form>
-        </div>
+            <div class="col">
+              <!-- <label class="sr-only" for="inlineFormInputGroup">Username</label> -->
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+                <input type="email" class="form-control" id="inlineFormInputGroup" placeholder="Email">
+              </div>
+            </div>
+            <div class="col">
+              <button type="submit" class="btn btn-primary mb-2 float-right" style="float: right;">Subscribe</button>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
   </div>
   <div class="row my-auto border-top border-white">
-    <p class="muted">Developed and designed by 
+    <p class="muted">Made with <span class="iconify" data-icon="emojione:heart-suit" data-inline="false"></span> by 
       <a class="text-decoration-none" href="www.zamanehsani.com" target="_blank" title="visit my website">Zaman</a></p>
   </div>
 </footer>
